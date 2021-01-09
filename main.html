@@ -1,1 +1,36 @@
-<h1>hello</h1>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+<div class="row main-container">
+    <div class="col-sm-6" onclick="navigate('analytics')"></div>
+    <div class="col-sm-6" onclick="navigate('store')"></div>
+    <div class="col-sm-6" onclick="navigate('data')"></div>
+    <div class="col-sm-6" onclick="navigate('consultation')"></div>
+</div>
+
+<script>
+    function navigate(url) {
+        window.location.href = './' + url + '.html';
+    }
+</script>
+
+<style>
+    .main-container {
+        background-image: url("./images/2.jpg");
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+        background-position:center center;
+        height: 100vh;
+    }
+
+    .col-sm-6 {
+        transition: 200ms;
+    }
+    .col-sm-6:hover {
+        background-color: rgba(0,0,0,.1);
+        cursor: pointer;
+    }
+
+    body {
+        overflow: hidden;
+    }
+</style>
