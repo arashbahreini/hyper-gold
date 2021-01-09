@@ -1,1 +1,28 @@
-<h1>Hello world</h1>
+<div class="main-div" onclick="navigate()">
+
+</div>
+
+<style>
+    .main-div:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    .main-div {
+        background-image: url("./images/1.jpg");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center center;
+        height: 50vh;
+        width: 70%;
+        margin-top: 25vh;
+        margin-left: 15%;
+        transition: 500ms;
+        box-shadow: 3rem 2rem 1rem 0rem lightgrey;
+    }
+</style>
+
+<script>
+    function navigate() {
+        window.location.href = './main.html';
+    }
+</script>
